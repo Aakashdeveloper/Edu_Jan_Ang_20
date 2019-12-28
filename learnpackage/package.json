@@ -1,0 +1,22 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "this is about learn npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Angular"
+  ],
+  "author": "Edureka",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "zone.js": "^0.10.2"
+  },
+  "devDependencies": {
+    "karma": "^4.4.1"
+  }
+}

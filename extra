@@ -1,0 +1,158 @@
+Angular 8
+
+CRUD
+
+CLI
+Angular (main)
+Component
+Pipe
+Module
+Service
+Directive
+Routing
+
+=> Template Forms
+=> Reactive Forms
+=> Login Logout(JWT)
+=> Multi lang
+=> Testing
+
+--------------------
+Production
+--------------------
+=> Docker
+=> Nginx
+
+---------------
+    Github
+---------------
+
+/////////**************///////
+NodeJS-> https://nodejs.org/en/
+VScode-> https://code.visualstudio.com/
+Github-> https://github.com/
+GitFollow-> https://github.com/Aakashdeveloper
+Edu_Jan_Ang_20
+
+>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<
+HTML
+CSS
+JavaScript
+BootStrap
+/////////**************///////
+
+NPM=>Node Package Manager
+package.json
+
+JavaScript Object Notation
+[
+    {
+        name:'john',
+        class:'UI'
+    },
+    {
+        name:'ammy',
+        class:'ang'
+    }
+]
+
+/************************/
+Step to creare package.json
+/************************/
+*NodeJs Must be installed
+> Navigate to the folder using cmd/terminal
+> type 'npm init'
+> Answer all question
+> type 'yes'
+
+/************************/
+Step to install packages
+/************************/
+localpackage
+> Navigate to the folder using cmd/terminal
+> npm install <packagename>/ npm i <packagename>
+
+globalpackage
+**No spacific folder
+(create,build,test,deploy)
+>Window
+=> run your can admin
+=> npm i -g <packagename>
+
+Mac/Linux
+> Open your terminal
+> sudo npm i -g <packagename>
+
+sudo npm i -g @aakashdeveloper/create-node-app
+
+/////////////////////////////
+**Very First When we get appliication form any one
+/////////////////////////////
+> Navigate to the folder using cmd/terminal
+> npm install
+(it will install all dependeices from package.json)
+
+
+npm i zone.js --save
+
+
+/************************/
+Step to setup angular appliication
+/************************/
+Window
+(one time)
+> run your cmd as admin
+> start => search(cmd)=> rightclick=> run as adminstrator
+> npm i -g @angular/cli
+
+(every application)
+> Navigate to the folder using cmd/terminal
+> ng new <appliication name>(myapp)
+> cd myapp
+> npm start
+> http://localhost:4200(open in browser)
+
+Mac/Linux
+(one time)
+> open your terminal
+> sudo npm i -g @angular/cli
+
+(every application)
+> Navigate to the folder using cmd/terminal
+> ng new <appliication name>(myapp)
+> cd myapp
+> npm start
+> http://localhost:4200(open in browser)
+
+
+///
+To Change port number
+///
+> ng serve --port 8900
+
+Angular is a frontend framework which help to build single page application with
+Component based structure using typescript
+
+
+/*****************
+Building Block
+*****************/
+Component => one page act like component (HTML, CSS, Logic)
+Pipe=> Run time data change
+Service => To connect with thrid part or any external agent(dependeicy injection)
+Directive => Small part of page(reusable)
+Routing => To handle multiple page
+Module=> To declare all the things
+
+*****
+> One Main Module
+> One Main Component
+*****
+
+/////////////////////////////////////////////
+Application BootStrap(how it work in lodaing(firsttime))
+/////////////////////////////////////////////
+
+>angular.json >main.ts =>mainModule(AppModule) => appComponent
+
+>Index.html
