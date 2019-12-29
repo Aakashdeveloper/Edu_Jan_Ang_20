@@ -156,3 +156,86 @@ Application BootStrap(how it work in lodaing(firsttime))
 >angular.json >main.ts =>mainModule(AppModule) => appComponent
 
 >Index.html
+
+/////////////////////////
+> Component
+> Module
+> Folder structure
+
+
+//////
+Import in file
+//////
+component=> Component
+module => NgModule
+Pipe=> Pipe & Pipetransform
+service => Injectable
+routing => NgModule
+directive => directive, ElementRef
+
+///////////
+Binding in Component
+//////////
+One Way Binding  (.ts=>.html)
+=> Data Binding       {{}}
+=> Property Binding    []
+=> Event Binding       ()
+Two Way Binding  (.ts=>html=>.ts) [()]
+
+
+string   = "klrne", "34" , '435'
+number = 4867, 4687.878, 346457568
+boolean = true/ false
+
+var a = ["apple","mango","banana"]
+undefined
+a[0]
+"apple"
+var a = [{"name":"a","class":"b"},{"name":1,"class":2}]
+undefined
+a[0].name
+"a"
+
+//////
+var a = [{"name":"a","class":"b"},{"name":1,"class":2}]
+undefined
+var a = ["apple","mango","banana"]
+undefined
+for(i=0;i<a.length;i++){console.log(a[i])}
+VM3147:1 apple
+VM3147:1 mango
+VM3147:1 banana
+undefined
+var a = [{"name":"a","class":"b"},{"name":1,"class":2}]
+undefined
+for(i=0;i<a.length;i++){console.log(a[i].name)}
+VM3171:1 a
+VM3171:1 1
+////////
+
+undefined
+var a = ["apple","mango","banana"]
+var data;
+
+for(data of a){
+    console.log(data)
+}
+
+
+
+////////**********************/////
+InBuilt Directive(structral directive)
+*ngFor
+*ngIf
+
+////////**********************/////
+
+var => we can redeclare andd reassign
+let => we cannot redeclare but can reassign
+const=> we cannot redeclare nor reassign
+
+
+var name = "apple"
+var name (declaring a variable)
+name="apple" (assignment of data)
+

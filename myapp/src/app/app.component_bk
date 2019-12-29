@@ -1,0 +1,16 @@
+import {Component} from '@angular/core';
+
+//Decorater-meta data
+@Component({
+    selector: 'app-main',
+    template: `<div>
+                    <app-home></app-home>
+                    <h1>This is Angular from Edureka</h1>
+                </div>`
+})
+
+
+//To make it available
+export class AppComponent {
+
+}
