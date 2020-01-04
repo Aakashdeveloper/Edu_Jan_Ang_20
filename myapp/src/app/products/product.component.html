@@ -4,33 +4,67 @@
         <h3 class="secondheading">{{desc}}</h3>
     </div>
     <div class="panel-body">
-        <table class="table">
+        <div class="row">
+            <div class="col-md-2">
+                Filter
+            </div>
+            <div class="col-md-4">
+                <input type="text" [(ngModel)]="userText"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Number of product Filter on the basis of {{userText}} is 
+                    {{(product|SearchPipe:userText).length}}
+                </h4>
+            </div>
+        </div>
+        <table class="table"  *ngIf="product && product.length; else loading">
             <thead>
                 <tr>
-                    <th>Image</th>
+                    <th>
+                        <button class="btn btn-danger"
+                        (click)="toggleImage()">
+                           {{showImage?"Hide Image":"Show Image"}}
+                        </button>
+                    </th>
                     <th>Name</th>
                     <th>Code</th>
                     <th>Price</th>
+                    <th>Date</th>
+                    <th>Rating</th>
                 </tr>
             </thead>
+            {{showImage}}
             <tbody>
-                <tr *ngFor="let prod of product">
+                <tr *ngFor="let prod of product | SearchPipe:userText">
                     <td>
                         <img [src]="prod.imageUrl"
+                        *ngIf="showImage"
+                
                         [style.width.px]="imageWidth"/>
                     </td>
                     <td>
-                        {{prod.productName}}
+                        {{prod.productName|myUpperCase:'lower'}}
                     </td>
                     <td>
-                        {{prod.productCode}}
+                        {{prod.productCode|myUpperCase:'upper'}}
                     </td>
                     <td>
-                        {{prod.price}}
+                        {{prod.price|Discount:6|currency:'GBP'}}
+                    </td>
+                    <td>
+                        {{prod.releaseDate|date}}
+                    </td>
+                    <td>
+                        <app-star></app-star>
                     </td>
                 </tr>
                 
             </tbody>
         </table>
+        <ng-template #loading>
+            <img src="../../assets/loader.gif"/>
+        </ng-template>
     </div>
 </div>

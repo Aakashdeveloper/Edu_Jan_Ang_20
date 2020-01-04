@@ -239,3 +239,29 @@ var name = "apple"
 var name (declaring a variable)
 name="apple" (assignment of data)
 
+https://ngapi4.herokuapp.com/api/getProducts
+
+////////*********GITHUB*************/////
+>>>first Time<<<<
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testgitrepo.git
+git push -u origin master
+
+>>>Next Time<<<<<
+git add .
+git commit -m "some comment"
+git push
+
+git clone https://github.com/Aakashdeveloper/testgitrepo.git
+////////**********************/////
+^ => all download the latest version
+~ =>download latest minor version
+  => exact version
+
+10.2.1 => 11.0.0
+10.2.1=> 10.3.0
+
+
+
