@@ -1,12 +1,14 @@
 import {Pipe, PipeTransform} from '@angular/core';
 import {IProduct} from './product.model';
 
+// decorator
+
 @Pipe({
-    name:'SearchPipe'
+    name: 'SearchPipe'
 })
 
 
-export class MySearchPipe implements PipeTransform{
+export class MySearchPipe implements PipeTransform {
     transform(value:IProduct[], userInput:string){
         userInput = userInput ? userInput.toLowerCase() : null;
         return userInput ? value.filter((data) => 

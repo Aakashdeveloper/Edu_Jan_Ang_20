@@ -45,7 +45,9 @@
                         [style.width.px]="imageWidth"/>
                     </td>
                     <td>
-                        {{prod.productName|myUpperCase:'lower'}}
+                        <a [routerLink]="['/product',prod.productId]">
+                            {{prod.productName|myUpperCase:'lower'}}
+                        </a>
                     </td>
                     <td>
                         {{prod.productCode|myUpperCase:'upper'}}
@@ -57,7 +59,8 @@
                         {{prod.releaseDate|date}}
                     </td>
                     <td>
-                        <app-star></app-star>
+                        <app-star [rating]="prod.starRating"
+                        (ratingClicked)="dataRecive($event)"></app-star>
                     </td>
                 </tr>
                 

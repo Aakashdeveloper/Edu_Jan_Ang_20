@@ -265,3 +265,79 @@ git clone https://github.com/Aakashdeveloper/testgitrepo.git
 
 
 
+
+/////////
+86/5 = 17.2*3
+
+
+/////////
+Parent to child
+> Property Binding
+> @Input
+>[]
+
+Child to Parent
+> CallBack Function
+> @Output & EventEmitter
+>()
+
+
+//////
+var a = 10
+var b = "my age is "+a 
+var c = `my age is ${a}`
+
+
+>>>>>>External Connect<<<<<<<
+> Services
+> Need to declare inside provider
+> httpModule
+> Injectable
+
+
+
+Resolve data in one go 
+>[1,2,3,4]
+
+> Stream of data
+
+
+>>>
+MEAN
+Mongo Express Angular Node
+<<<<
+
+CLI
+> ng g c ordersPage
+> ng g s servicename
+> ng g d directive
+> ng g m module
+> ng g p pipetime
+
+
+////
+Input
+Output
+Lifecycle
+Service
+Rxjs
+Router
+CLI
+Details page
+Params
+
+
+/////
+Detail Routing
+Child Modules
+Directive
+Router Gaurds
+
+Template Forms
+
+///////
+Reactive Forms 
+Deploymment
+Testing
+
+Login/logout
