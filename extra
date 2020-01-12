@@ -334,10 +334,21 @@ Directive
 Router Gaurds
 
 Template Forms
+Post Call 
+Validations
+Reactive Forms
+
 
 ///////
-Reactive Forms 
+Login/logout
+
+Git
 Deploymment
 Testing
+Multilang
 
-Login/logout
+
+
+///////
+ng-pristine   ng-valid       ng-touched
+ng-dirty      ng-invalid     ng-untouched

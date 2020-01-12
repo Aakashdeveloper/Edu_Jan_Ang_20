@@ -7,9 +7,14 @@
         </div>
         <div class="row"  >
             <div class="jumbotron">
-                <h1>Product Details Page for {{id}}</h1>
-                <p>jkhjkbjkhubjk hbh hb hjb u jhb</p>
+                <h1>{{details[0].productName}}</h1>
+                <h2>Product Details Page for {{id}}</h2>
+                <img [src]="details[0].imageUrl"/>
+                <p>{{details[0].description}}</p>
             </div>
+            <button class="btn btn-danger" (click)="onBack()">
+                <<Back
+            </button>
         </div>
     </div>
 </div>
