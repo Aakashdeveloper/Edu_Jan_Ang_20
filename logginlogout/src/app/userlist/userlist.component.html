@@ -1,0 +1,24 @@
+<br/>
+<div class="panel panel-info">
+    <div class="panel-heading">
+       Users List Page
+       <button (click)="logout(event)" class="btn btn-danger">Logout</button>
+       <button (click)="onback(event)" class="btn btn-danger">back</button>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of userList">
+                    <td>{{user.name}}</td>
+                    <td>{{user.role}}</td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+</div>

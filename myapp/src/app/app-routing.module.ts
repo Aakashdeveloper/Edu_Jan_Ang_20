@@ -6,17 +6,17 @@ import { HomeComponent } from './home/home.component';
 import { OrdersComponent } from './orders/orders.component';
 import { RouterGaurds } from './products/product.gaurd';
 
-const routes: Routes =[
+const routes: Routes = [
     {path: 'product', component: ProductComponent},
-    {path: 'product/:id',canActivate:[RouterGaurds] ,component: ProductDetailsComponent},
+    {path: 'product/:id', canActivate: [RouterGaurds] , component: ProductDetailsComponent},
     {path: 'home', component: HomeComponent},
     {path: 'orders', component: OrdersComponent},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: '**', component: HomeComponent},
-]
+];
 
 @NgModule({
-    imports:[
+    imports: [
         RouterModule.forRoot(routes)
     ],
     providers: [
