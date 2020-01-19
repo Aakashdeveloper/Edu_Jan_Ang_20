@@ -19,7 +19,7 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit() {
     this.id = this.route.snapshot.params['id'];
     this.productService.getProductDetails(this.id)
-        .subscribe((data) => this.details = data);
+        .subscribe((data) => this.details = data );
   }
 
   onBack(): void {

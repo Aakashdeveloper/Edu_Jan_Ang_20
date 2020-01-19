@@ -352,3 +352,22 @@ Multilang
 ///////
 ng-pristine   ng-valid       ng-touched
 ng-dirty      ng-invalid     ng-untouched
+
+
+> npm run build
+
+
+docker build . -t  janang
+docker image ls 
+docker run -p 8089:4200 janang
+
+
+server {
+        listen       8081;
+        server_name  localhost;
+
+        location / {
+	        root   /var/www/ang-app;
+            index  index.html index.htm;
+        }
+    }

@@ -23,7 +23,7 @@ const routes: Routes = [
         RouterGaurds
     ],
 
-    exports:[
+    exports: [
         RouterModule
     ]
 })
