@@ -17,6 +17,6 @@
     "zone.js": "^0.10.2"
   },
   "devDependencies": {
-    "karma": "^4.4.1"
+    "karma": "^6.3.14"
   }
 }
